@@ -1,0 +1,41 @@
+/*. Create a Music Player 
+o Develop a music player with a playlist and basic controls (play, pause, 
+next, previous). 
+o Use HTML to structure the content, CSS to style the website, and 
+JavaScript to add interactive elements. 
+o Make at least five git commits, ensuring each commit reflects significant 
+progress 
+o Host the website on GitHub Pages.*/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Music Player</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="music-player">
+    <h1>Simple Music Player</h1>
+    <audio id="audio" src=""></audio>
+
+    <div class="controls">
+      <button onclick="prevTrack()">⏮</button>
+      <button onclick="togglePlay()" id="playBtn">▶</button>
+      <button onclick="nextTrack()">⏭</button>
+    </div>
+
+    <div class="track-info">
+      <p id="trackName">Select a track</p>
+    </div>
+
+    <ul id="playlist">
+      <li onclick="selectTrack(0)">🎵 Track 1</li>
+      <li onclick="selectTrack(1)">🎵 Track 2</li>
+      <li onclick="selectTrack(2)">🎵 Track 3</li>
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
