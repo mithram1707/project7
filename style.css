@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  height: 100vh;
+}
+
+.music-player {
+  background: white;
+  margin-top: 50px;
+  padding: 30px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.controls button {
+  background: #4caf50;
+  color: white;
+  border: none;
+  margin: 10px;
+  padding: 10px 15px;
+  font-size: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#trackName {
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+#playlist {
+  list-style: none;
+  padding: 0;
+}
+
+#playlist li {
+  background: #f0f0f0;
+  margin: 5px 0;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#playlist li:hover {
+  background: #dcedc8;
+}
